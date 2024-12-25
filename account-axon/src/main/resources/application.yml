@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: accounts-axon
+  datasource:
+    url: jdbc:mysql://localhost:3306/accounts_axon
+    username: root
+    password: *
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+axon:
+  port: 8024:8124
+
+server:
+  port: 8080
+
+
+
+
+
+
+
